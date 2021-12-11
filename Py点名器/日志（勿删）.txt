@@ -1,0 +1,19 @@
+
+2019/11/29 17:38
+关于停留：
+1.最后加上Input()
+2.引入os模块，用os.system('pause'),这东西和c语言的system（“pause”）类似。
+（这个和前面有一点不一样可以试一下，不过还是不太好写）
+
+这里有一个网址
+https://www.cnblogs.com/way_testlife/archive/2011/03/29/1999283.html
+似乎有点用处。
+https://docs.python.org/3/library/functions.html#built-in-functions这个看上去很强，嗯。
+
+def input(prompt):
+  return eval(raw_input(prompt))
+
+（摘录）input也是调用了raw_input，只是做了eval处理
+而eval有什么作用呢？
+input：会根据用户的输入来做类型的转换
+raw_input：则会把用户的输入都作为一个字符串来处理
